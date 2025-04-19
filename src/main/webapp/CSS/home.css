@@ -1,0 +1,334 @@
+@charset "UTF-8";
+/* Existing CSS (no changes here) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: auto;
+    background-color: rgb(244, 242, 238);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+
+.navlogo img{
+    height: 100px;
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(5, 192, 249);
+    padding: 10px 20px;
+}
+
+.section{
+    height: 500px;
+    width: auto;
+    /* background-color: aqua; */
+    background-image: url('https://plus.unsplash.com/premium_photo-1669150852127-2435412047f2?q=80&w=2017&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 15px;
+
+}
+
+.sectionblack{
+    height: 500px;
+    width: auto;
+    background-color: rgb(69, 65, 65, 0.4);
+    backdrop-filter: blur(5px);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    gap: 35px;
+}
+
+.section2{
+    height: auto;
+    width: auto;
+    margin: 15px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.cards{
+    height: auto;
+    width: 20%;
+    background-color: rgb(122, 122, 244);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(89, 87, 87);
+}
+
+.cardsimg{
+    height: 300px;
+    width: 100%;
+    padding: 20px;
+}
+
+.cardsimg img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.cardstitle{
+    color: rgb(255, 255, 255);
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cardstitle h2{
+    background-color: rgba(255, 163, 43, 0.881);
+    text-align: center;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 20px;
+}
+
+.cardstitle a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgba(4, 246, 0, 0.7);
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.cardstitle a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgba(4, 246, 0, 0.6);
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.cardstitle span{
+    color: rgb(254, 20, 20);
+    font-size: 16px;
+    text-align: center;
+    background-color: rgb(238, 231, 231);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.section3 {
+    background-color: #222;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    margin: 10px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.footer-links ul li a:hover {
+    color: #ffcc00;
+}
+
+.footer-social {
+    margin-top: 15px;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #ffcc00;
+}
+
+.footer-text {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Responsive CSS for Mobile View */
+@media screen and (max-width: 768px) {
+    /* Adjust navigation for smaller screens */
+    nav {
+        padding: 10px 20px; /* Reduce padding */
+        flex-direction: column; /* Stack logo and links */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .navlogo img {
+        height: 80px; /* Slightly smaller logo */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack the navigation links */
+        align-items: flex-start; /* Align links to the left */
+        margin-top: 15px; /* Add some space between logo and links */
+        gap: 10px; /* Reduce gap between links */
+        width: 100%; /* Make the list take full width */
+    }
+
+    nav ul li {
+        width: 100%; /* Make each list item take full width */
+    }
+
+    nav ul li a {
+        display: block; /* Make the link a block element for full width and padding */
+        padding: 10px; /* Adjust padding for links */
+        text-align: left; /* Align text to the left */
+    }
+
+    /* Adjust the main welcome section */
+    .section {
+        height: auto; /* Adjust height based on content */
+        margin: 10px; /* Reduce margin */
+    }
+
+    .sectionblack {
+        height: auto; /* Adjust height based on content */
+        padding: 20px; /* Adjust padding */
+        gap: 20px; /* Reduce gap */
+    }
+
+    .sectionblack h1 {
+        font-size: 24px; /* Smaller heading */
+    }
+
+    .sectionblack p {
+        font-size: 16px; /* More readable paragraph text */
+    }
+
+    /* Adjust the food cards section */
+    .section2 {
+        margin: 10px; /* Reduce margin */
+        padding: 15px; /* Reduce padding */
+        gap: 15px; /* Reduce gap */
+        flex-direction: column; /* Stack cards vertically */
+    }
+
+    .cards {
+        width: 100%; /* Make cards take full width */
+        margin-bottom: 15px; /* Add space between stacked cards */
+    }
+
+    .cardsimg {
+        height: auto; /* Adjust image height */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .cardsimg img {
+        height: auto; /* Ensure image scales properly */
+    }
+
+    .cardstitle h2 {
+        font-size: 18px; /* Slightly smaller heading */
+    }
+
+    .cardstitle p {
+        font-size: 14px; /* Smaller paragraph text */
+    }
+
+    .cardstitle a {
+        padding: 8px; /* Adjust button padding */
+        font-size: 14px; /* Smaller button text */
+    }
+
+    /* Adjust the footer */
+    .section3 {
+        padding: 20px 0; /* Reduce padding */
+        margin: 5px; /* Reduce margin */
+    }
+
+    .footer-container {
+        padding: 0 15px; /* Add some padding on the sides */
+    }
+
+    .footer-logo img {
+        width: 100px; /* Slightly smaller logo */
+    }
+
+    .footer-links ul li {
+        margin: 0 10px; /* Reduce link margin */
+    }
+
+    .footer-links ul li a {
+        font-size: 14px; /* Smaller link font */
+    }
+
+    .footer-social a {
+        font-size: 18px; /* Slightly smaller social icons */
+        margin: 0 8px; /* Reduce icon margin */
+    }
+
+    .footer-text {
+        font-size: 12px; /* Smaller copyright text */
+    }
+}
+
+.imagetable {
+    height: 120px;
+    width: 120px;
+    display: block; /* Ensures it behaves like a block element */
+    margin: 0 auto 10px auto; /* Centers the image horizontally */
+}

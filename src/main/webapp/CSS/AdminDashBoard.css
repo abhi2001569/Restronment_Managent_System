@@ -1,0 +1,258 @@
+@charset "UTF-8";
+/* Existing CSS (no changes here) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: auto;
+    background-color: rgb(244, 242, 238);
+}
+
+.section12{
+    height: auto;
+    width: auto;
+    background-color: rgb(221, 221, 227);
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.card142{
+    height: 150px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(182, 191, 182, 0.5);
+    justify-content: center;
+}
+
+.leftcard{
+    height: 150px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftcard span{
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgb(251, 248, 248);
+
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.rightcard{
+    height: 150px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.rightcard span{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.rightcard button{
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(122, 101, 215);
+}
+
+.seectionadd{
+
+    height: auto;
+    width: auto;
+    background-color: rgb(221, 221, 227);
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.card754{
+    height: 110px;
+    width:auto;
+    background-color: rgba(182, 191, 182, 0.5);
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardimg{
+    height: 110px;
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardimg span{
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgb(251, 248, 248);
+
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+
+.cardtitle{
+    height: 110px;
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cardtitle button{
+    padding: 10px 30px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(122, 101, 215);
+}
+
+/* Responsive CSS for Mobile View */
+@media screen and (max-width: 768px) {
+    /* Adjust navigation for smaller screens */
+    nav {
+        padding: 10px 20px; /* Reduce padding */
+        flex-direction: column; /* Stack logo and links */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .navlogo img {
+        height: 80px; /* Slightly smaller logo */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack the navigation links */
+        align-items: flex-start; /* Align links to the left */
+        margin-top: 15px; /* Add some space between logo and links */
+        gap: 10px; /* Reduce gap between links */
+        width: 100%; /* Make the list take full width */
+    }
+
+    nav ul li {
+        width: 100%; /* Make each list item take full width */
+    }
+
+    nav ul li a {
+        display: block; /* Make the link a block element for full width and padding */
+        padding: 10px; /* Adjust padding for links */
+        text-align: left; /* Align text to the left */
+    }
+
+    /* Adjust the main content section */
+    .section12 {
+        margin: 15px; /* Reduce margin */
+        padding: 10px; /* Reduce padding */
+        gap: 10px; /* Reduce gap between cards */
+        flex-direction: column; /* Stack the cards vertically */
+    }
+
+    .card142 {
+        width: 100%; /* Make cards take full width */
+        height: auto; /* Adjust height based on content */
+        flex-direction: row; /* Keep left and right side by side */
+        margin-bottom: 10px; /* Add some space between stacked cards */
+    }
+
+    .leftcard {
+        width: 30%; /* Adjust width of the left icon section */
+        height: auto;
+        padding: 15px 0; /* Add vertical padding */
+    }
+
+    .rightcard {
+        width: 70%; /* Adjust width of the right text section */
+        height: auto;
+        padding: 15px 0; /* Add vertical padding */
+        gap: 10px; /* Reduce gap in right card */
+    }
+
+    .rightcard span {
+        font-size: 16px; /* Slightly smaller font size */
+    }
+
+    .rightcard button {
+        padding: 8px 15px; /* Slightly smaller button */
+        font-size: 14px;
+    }
+
+    /* Adjust the add section */
+    .seectionadd {
+        margin: 15px; /* Reduce margin */
+        padding: 10px; /* Reduce padding */
+        gap: 10px; /* Reduce gap between cards */
+        flex-direction: column; /* Stack the add cards vertically */
+    }
+
+    .card754 {
+        width: 100%; /* Make add cards take full width */
+        height: auto; /* Adjust height based on content */
+        flex-direction: row; /* Keep image and title side by side */
+        margin-bottom: 10px; /* Add space between stacked cards */
+        padding: 15px;
+    }
+
+    .cardimg {
+        width: 30%; /* Adjust width of the image section */
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .cardtitle {
+        width: 70%; /* Adjust width of the title/button section */
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .cardtitle button {
+        padding: 8px 20px; /* Slightly smaller button */
+        font-size: 14px;
+    }
+
+    /* Adjust font sizes for better readability on smaller screens if needed */
+    /* body {
+        font-size: 14px;
+    } */
+}

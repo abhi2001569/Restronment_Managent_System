@@ -1,0 +1,197 @@
+@charset "UTF-8";
+/* Existing CSS (no changes here) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    background-color: rgb(244, 242, 238);
+}
+
+.sectionregister {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 20px; /* Add some top padding for better spacing on mobile */
+}
+
+.formregi {
+    width: 40%;
+    background-color: rgb(221, 221, 227);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.formregi form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.forminner {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.forminner label {
+    font-size: 18px;
+    color: rgb(128, 128, 226);
+    min-width: 30px; /* Ensure label takes up some space */
+    text-align: center; /* Center the icon in the label */
+}
+
+.forminner input,
+.forminner textarea {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+}
+
+.forminner select{
+	width: 100%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+}
+
+
+.forminner input[type="date"] {
+    color: rgb(50, 50, 50);
+}
+
+.forminner textarea {
+    resize: none;
+    height: 80px; /* Increase textarea height for better mobile usability */
+}
+
+.forminner input::placeholder,
+.forminner textarea::placeholder {
+    color: grey;
+}
+
+.btnlogin{
+    display: flex;
+    flex-direction: column; /* Stack buttons on mobile */
+    align-items: center; /* Center items */
+    justify-content: center;
+    padding: 10px;
+    gap: 10px; /* Add gap between button and link */
+}
+
+.submit-btn {
+    padding: 10px 20px; /* Add horizontal padding */
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: rgb(81, 81, 206);
+    width: 100%; /* Make button full width on mobile */
+}
+
+.submit-btn:hover {
+    background-color: rgb(100, 100, 200);
+    color: white;
+}
+
+.btnlogin a {
+    font-size: 14px;
+    color: rgb(81, 81, 206);
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px; /* Adjust padding for mobile */
+}
+
+.navlogo img {
+    height: 80px; /* Adjust logo size for mobile */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Reduce gap between nav items */
+}
+
+nav ul li {
+    font-size: 14px; /* Adjust font size of nav items */
+}
+
+nav ul li i {
+    margin-right: 5px; /* Add some space for the icon */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(5, 192, 249);
+    padding: 8px 15px; /* Adjust padding for nav links */
+    border-radius: 5px;
+}
+
+/* Responsive CSS for Mobile View */
+@media screen and (max-width: 768px) {
+    .formregi {
+        width: 90%; /* Make the form take up more width on smaller screens */
+        margin: 20px; /* Add some margin around the form */
+    }
+
+    .forminner {
+        gap: 10px; /* Reduce gap between label and input */
+    }
+
+    .forminner label {
+        font-size: 16px; /* Adjust label font size */
+        min-width: 25px;
+    }
+
+    .forminner input,
+    .forminner textarea {
+        font-size: 14px; /* Adjust input font size */
+    }
+
+    nav {
+        flex-direction: column; /* Stack navigation items */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack links vertically */
+        align-items: flex-start;
+        margin-top: 10px; /* Add some space between logo and links */
+        gap: 5px; /* Reduce gap between links */
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: block; /* Make link full width */
+        padding: 8px;
+        text-align: left;
+    }
+}
